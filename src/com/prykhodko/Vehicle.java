@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////////////////
-// The Vehicle class is                       //
-//                               //
+// The Vehicle class shows how inheritance works in Java           //
+//                                                                 //
 /////////////////////////////////////////////////////////////////////
 
 package com.prykhodko;
@@ -44,13 +44,22 @@ public class Vehicle {
         return direction;
     }
 
-    
 
+    /**
+     * Describes how the car is moving
+     * @param newDirection
+     * @param newVelocity
+     */
     public void moveCar(int newDirection, int newVelocity){
         direction = newDirection;
         velocity = newVelocity;
     }
 
+
+    /**
+     * Describes how the car changes the direction
+     * @param direction
+     */
     public void driveCar(int direction){
         this.direction += direction;
         System.out.println("Vehicle.drive() works. Current direction is " + direction);
